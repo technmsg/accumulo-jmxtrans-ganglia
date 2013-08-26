@@ -1,0 +1,24 @@
+{
+"servers":
+[{
+"host":"localhost",
+"port":"9005",
+"queries":
+[{
+"obj":"accumulo.server.metrics:service=LogWriter,name=LogWriterMBean,instance=logger",
+"resultAlias":"Accumulo",
+"outputWriters":
+[{
+"@class":"com.googlecode.jmxtrans.model.output.GangliaWriter",
+"settings":
+{
+"groupName" : "Accumulo Logger",
+"host" : "MonitorHost",
+"port" : 8649,
+"typeNames" : [""]
+}
+}]
+}]
+}]
+}
+

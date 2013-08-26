@@ -1,0 +1,7 @@
+# enabling JMX 
+export ACCUMULO_TSERVER_OPTS="-Dcom.sun.management.jmxremote.port=9006 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false $ACCUMULO_TSERVER_OPTS"
+export ACCUMULO_MASTER_OPTS="-Dcom.sun.management.jmxremote.port=9002 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false $ACCUMULO_MASTER_OPTS"
+export ACCUMULO_MONITOR_OPTS="-Dcom.sun.management.jmxremote.port=9003 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false $ACCUMULO_MONITOR_OPTS"
+export ACCUMULO_GC_OPTS="-Dcom.sun.management.jmxremote.port=9004 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false $ACCUMULO_GC_OPTS"
+export ACCUMULO_LOGGER_OPTS="-Dcom.sun.management.jmxremote.port=9005 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false $ACCUMULO_LOGGER_OPTS"
+# 
